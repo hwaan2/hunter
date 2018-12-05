@@ -24,7 +24,7 @@ hunter_add_version(
     PACKAGE_NAME
     cpp_redis
     VERSION
-    "4.3.1"
+    "4.3.1-h1"
     URL
     "https://github.com/hwaan2/cpp_redis/archive/4.3.1-h1.tar.gz"
     SHA1
