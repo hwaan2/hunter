@@ -20,6 +20,17 @@ hunter_add_version(
     b88a7f6c303122f4f62f0c37cce8625a592b51d1
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    cpp_redis
+    VERSION
+    "4.3.1"
+    URL
+    "https://github.com/hwaan2/cpp_redis/archive/4.3.1-h1.tar.gz"
+    SHA1
+    0f0be2bd103a800e655773af9655c2503789c991
+)
+
 # Pick a download scheme
 hunter_pick_scheme(DEFAULT url_sha1_cmake) # use scheme for cmake projects
 
