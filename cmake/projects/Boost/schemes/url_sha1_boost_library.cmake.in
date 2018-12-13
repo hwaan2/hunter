@@ -288,6 +288,8 @@ file(
 
 list(APPEND build_opts ${b2_component_opts})
 
+list(APPEND build_opts "cxxstd=14")
+
 if(CMAKE_EXE_LINKER_FLAGS)
   list(APPEND build_opts "linkflags=${CMAKE_EXE_LINKER_FLAGS}")
 endif()
@@ -322,7 +324,7 @@ if(@HUNTER_STATUS_DEBUG@)
 endif()
 
 if(CMAKE_HOST_WIN32)
-  set(b2_cmd "b2 cxxstd=14")
+  set(b2_cmd "b2")
   if("@MSVC@")
     set(HUNTER_MSVC_VCVARSALL "@HUNTER_MSVC_VCVARSALL@")
     set(HUNTER_MSVC_ARCH "@HUNTER_MSVC_ARCH@")
@@ -335,7 +337,7 @@ if(CMAKE_HOST_WIN32)
     set(bootstrap_cmd "bootstrap.bat")
   endif()
 else()
-  set(b2_cmd "./b2 cxxstd=14")
+  set(b2_cmd "./b2")
   set(bootstrap_cmd "./bootstrap.sh")
   set(patch_cmd "@CMAKE_COMMAND@" -E echo "Dummy patch command")
 endif()
