@@ -28,11 +28,11 @@ hunter_add_version(
     URL "https://github.com/facebook/rocksdb/archive/v5.14.2.tar.gz"
     SHA1 "376bc537e8c716111214274755f5fe4026e5a354")
 
-hunter_add_version(
-    PACKAGE_NAME rocksdb
-    VERSION 5.17.2
-    URL "https://github.com/facebook/rocksdb/archive/v5.17.2.tar.gz"
-    SHA1 "dd54886519ce3f0344727f0ecd57d573ff7ee539")
+hunter_add_version(rocksdb
+    PACKAGE_NAME
+    VERSION 5.17.4-h0
+    URL "https://github.com/hwaan2/rocksdb/archive/v5.17.4-h0.tar.gz"
+    SHA1 "a49b214790eb78fc8639a36bc35707ed99b451e4")
 
 
 if(MSVC)
