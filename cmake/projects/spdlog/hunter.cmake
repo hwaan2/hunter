@@ -86,6 +86,17 @@ hunter_add_version(
     8bebf25ee48fba4f0c341954b50d26e8292e9f8f
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    spdlog
+    VERSION
+    "1.3.1-p0"
+    URL
+    "https://github.com/hwaan2/spdlog/archive/v1.3.1-p0.tar.gz"
+    SHA1
+    6ce9229c00be40201854a801fd795a7dc1b548b1
+)
+
 hunter_cmake_args(
     spdlog
     CMAKE_ARGS
