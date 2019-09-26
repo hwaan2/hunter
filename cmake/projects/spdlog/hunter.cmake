@@ -92,9 +92,9 @@ hunter_add_version(
     VERSION
     "1.3.1-p0"
     URL
-    "https://github.com/hwaan2/spdlog/archive/v1.3.1-p0.tar.gz"
+    "https://github.com/hunter-packages/spdlog/archive/v1.3.1-p0.tar.gz"
     SHA1
-    6ce9229c00be40201854a801fd795a7dc1b548b1
+    3d0538af5ea93995ff417faa979f309f834fa352
 )
 
 hunter_cmake_args(
@@ -103,6 +103,7 @@ hunter_cmake_args(
         SPDLOG_EXTERNAL_TOOLCHAIN=ON # tell spdlog not to modify cxxflags
         SPDLOG_BUILD_EXAMPLES=OFF
         SPDLOG_BUILD_TESTING=OFF
+        SPDLOG_BUILD_TESTS=OFF
         SPDLOG_BUILD_BENCH=OFF
 )
 
